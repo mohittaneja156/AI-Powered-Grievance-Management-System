@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm install --prefix server && npm install --prefix frontend",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix frontend",
     "build": "npm run build --prefix frontend",
+    "build-all": "npm run install-all && npm run build",
     "start": "node server/index.js",
     "start:prod": "npm run build && npm run start",
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix frontend\""
