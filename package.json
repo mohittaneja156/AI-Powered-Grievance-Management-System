@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd frontend && npm install",
     "build": "cd frontend && npm run build",
     "start": "node server/index.js",
     "start:prod": "npm run build && npm run start",
-    "dev": "concurrently \"cd server && npm run dev\" \"cd frontend && npm run dev\""
+  "dev": "concurrently \"cd server && npm run dev\" \"cd frontend && npm run dev\""
   },
   "author": "",
   "license": "ISC",
