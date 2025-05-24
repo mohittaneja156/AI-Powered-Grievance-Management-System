@@ -5,8 +5,12 @@ import { BiSolidFileDoc } from 'react-icons/bi'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
 // Access your API key (it's recommended to load this from environment variables, not hardcode)
-const genAI = new GoogleGenerativeAI('AIzaSyAUh9n7q6kk3OLCosO5IdEltwh13C0uI90')
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
 
+if (!API_KEY) {
+  console.error("Gemini API key is not set. Please check your .env file and ensure the correct prefix.");
+
+}
 // --- This is the key change: Updated model to 'gemini-1.5-flash' ---
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
 // ------------------------------------------------------------------
