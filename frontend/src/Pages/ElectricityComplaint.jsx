@@ -9,11 +9,10 @@ const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!API_KEY) {
   console.error("Gemini API key is not set. Please check your .env file and ensure the correct prefix.");
-
 }
-// --- This is the key change: Updated model to 'gemini-1.5-flash' ---
+
+const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
-// ------------------------------------------------------------------
 
 const determinePriority = async (issueType, issueDetails) => {
   if (!issueType || !issueDetails) {
