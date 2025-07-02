@@ -191,7 +191,6 @@ function ElectricityComplaint() {
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-50 p-6">
       {/* Lightning Animation Background */}
       <div className="fixed inset-0 -z-10 opacity-5">
-        <div className="absolute inset-0 bg-[url('/lightning-pattern.png')] bg-repeat animate-pulse-slow"></div>
       </div>
 
       <div className="max-w-4xl mx-auto">

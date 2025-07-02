@@ -1,18 +1,18 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './Pages/Dashboard'
-import GrievanceAnalytics from './pages/GrievanceAnalytics'
-import TrendAnalysis from './pages/TrendAnalysis'
-import PredictiveInsights from './pages/PredictiveInsights'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
+import GrievanceAnalytics from './Pages/GrievanceAnalytics'
+import TrendAnalysis from './Pages/TrendAnalysis'
+import PredictiveInsights from './Pages/PredictiveInsights'
+import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 import ProtectedRoute from './components/ProtectedRoute'
-import FileComplaint from './pages/FileComplaint'
-import JalBoardComplaint from './pages/JalBoardComplaint'
-import ElectricityComplaint from './pages/ElectricityComplaint'
+import FileComplaint from './Pages/FileComplaint'
+import JalBoardComplaint from './Pages/JalBoardComplaint'
+import ElectricityComplaint from './Pages/ElectricityComplaint'
 import GrievancesTable from './components/GrievancesTable.jsx'
-import ServiceChatbot from './pages/ServiceChatbot';
-import UserDashboard from './pages/UserDashboard';
+import ServiceChatbot from './Pages/ServiceChatbot';
+import UserDashboard from './Pages/UserDashboard';
 
 function App() {
   return (
