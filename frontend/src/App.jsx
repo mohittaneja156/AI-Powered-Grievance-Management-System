@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
-import Dashboard from './pages/Dashboard'
+import Dashboard from './Pages/Dashboard'
 import GrievanceAnalytics from './pages/GrievanceAnalytics'
 import TrendAnalysis from './pages/TrendAnalysis'
 import PredictiveInsights from './pages/PredictiveInsights'
